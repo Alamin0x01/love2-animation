@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../Assets/Image/Sky.jpg');
+    /* background-position: center; */
+    background-size: cover;
+}
+.Fairy{
+    display: flex;
+    justify-content: end;
+    width: 1200px;
+    margin: 50px auto;
+    /* background-color: lightseagreen; */
+}
+.fairy{
+    position: relative;
+    height: 250px;
+    margin-top: 60px;
+    transform: rotate(-40deg) scale(0.75);
+    opacity: 0.7;
+    animation: fairyanim 5s linear 0s infinite forwards ;
+    animation-play-state: running;
+}
+@keyframes fairyanim{
+    0%{
+        top: 0;
+    }
+    25%{
+        top: 25px;
+    }
+    50%{
+        top: 0px;
+    }
+    75%{
+        top: 25px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+.prince{
+    width: 200px;
+    position: relative;
+    transform: scaleX(-1);
+    top: 150px;
+    left: -150px;
+    animation: princeanim 20s linear 0s infinite forwards;
+    animation-play-state: running;
+}
+
+@keyframes princeanim{
+    0%{
+        top: 150px;
+        left: -150px; 
+        width: 200px;
+        transform:scaleX(-1) translate(0px,0px);
+    }
+    10%{
+        top: 150px;
+        left: -150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(0deg);
+    }
+    20%{
+        top: -5px;
+        left: -150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-180deg);
+    } 
+    30%{
+        top: -5px;
+        left: 150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-360deg);
+    }
+    40%{
+        top: 350px;
+        left: 150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-540deg);
+    }
+    50%{
+        top: 350px;
+        left: -150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-720deg);
+    }
+    /* 20% */
+    60%{ 
+        top: -5px;
+        left: -150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-1080deg);
+    }
+    70%{
+        top: -5px;
+        left: 150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-1440deg);
+    }
+    80%{
+        top: 350px;
+        left: 150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-1800deg);
+    }
+    90%{
+        top: 350px;
+        left: -150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-2160deg);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: -10px;
+        left: 150px; 
+        width: 120px;
+        transform:scaleX(-1) translate(-1170px,-400px) rotate(-2160deg); 
+    }
+}
+.Text{
+    color: lightseagreen;
+    font-weight: 700;
+    font-size: 60px;
+}
